@@ -55,7 +55,9 @@ while getopts t:f: OPTION; do
             from=$OPTARG
         ;;
         ?)
-            echo "script usage: $(basename \$0) [-l] [-h] [-a somevalue]" >&2
+            echo "Invalid option, try with
+                f       from: number
+                t       to: number"
             exit 1
         ;;
     esac
